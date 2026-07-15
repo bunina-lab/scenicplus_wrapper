@@ -38,7 +38,7 @@ output_data:
   AUCell_extended: "AUCell_extended.h5mu"
 
 params_general:
-  temp_dir: "/tmp/spx_grn_core_wrapper"
+  temp_dir: ".tmp/spx_grn_core_wrapper"
   n_cpu: 2
   seed: 666
 

@@ -1,20 +1,3 @@
-# Pruned validation harness: contains ONLY the 6 GRN-core rules copied
-# verbatim (shell commands unchanged) from the officially installed
-# scenicplus package's Snakefile
-# (<env_site_packages>/scenicplus/snakemake/Snakefile, mirrored unmodified
-# at scenicplus-validation-harness/Snakemake/workflow/Snakefile):
-#   tf_to_gene, region_to_gene, eGRN_direct, eGRN_extended,
-#   AUCell_direct, AUCell_extended
-#
-# Every other rule from the original DAG (prepare_GEX_ACC_multiome,
-# download_genome_annotations, get_search_space, motif_enrichment_cistarget,
-# motif_enrichment_dem, prepare_menr) is DELIBERATELY absent. Their outputs
-# are instead frozen, static fixture files copied from a real Phase-1 run
-# of the unmodified pipeline (scenicplus-validation-harness/run/) into
-# data/fixtures/ -- see config/config.yaml's input_data section. This
-# Snakefile will never invoke biomart, NCBI, MACS2, or any motif database
-# lookup; every job is deterministic given the frozen fixtures.
-
 configfile: "config/config.yaml"
 
 rule all:
