@@ -1,5 +1,6 @@
 # Regenerable pipeline output (re-run Snakemake to recreate)
 /results/
+.tmp/
 .snakemake/
 
 # Python / build artifacts
@@ -24,3 +25,4 @@ __pycache__/
 #   data/fixtures/combined_GEX_ACC_mudata.h5mu               (~10 MB)
 #   data/fixtures/cistromes_{direct,extended}.h5ad           (~0.5 MB each)
 #   results_control/snakemake_10{a,b}_auc_*.h5mu             (~0.15 MB each)
+results/
